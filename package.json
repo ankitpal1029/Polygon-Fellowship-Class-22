@@ -1,0 +1,11 @@
+{
+  "name": "Polygon-Fellowship-Class-22",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ankitpal1029/Polygon-Fellowship-Class-22.git",
+  "author": "ankitpal1029 <ankitkumarpal27@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.9.9"
+  }
+}
