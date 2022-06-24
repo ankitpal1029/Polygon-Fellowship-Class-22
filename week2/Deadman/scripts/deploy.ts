@@ -16,5 +16,5 @@ const main = async () => {
 // and properly handle errors.
 main().catch((error) => {
   console.error(error);
-  process.exitCode = 1;
+  process.exit(1);
 });
