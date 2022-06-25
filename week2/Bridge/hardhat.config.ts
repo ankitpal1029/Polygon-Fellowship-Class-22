@@ -18,7 +18,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     console.log(account.address);
   }
 });
-const { API_URL, PRIVATE_KEY } = process.env;
+const { MUMBAI_API_URL, API_URL, PRIVATE_KEY } = process.env;
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
@@ -30,10 +30,9 @@ const config: HardhatUserConfig = {
       url: API_URL,
       accounts: [`0x${PRIVATE_KEY}`],
     },
-    ropsten: {
-      url: process.env.ROPSTEN_URL || "",
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    mumbai: {
+      url: MUMBAI_API_URL,
+      accounts: [],
     },
   },
   gasReporter: {
