@@ -70,7 +70,7 @@ it("Should transfer funds to fallback after 10 blocks of still_alive not being c
 
   expect(await ethers.provider.getBalance(ownerContract.address)).to.equal(100);
   await ownerContract.still_alive();
-  await network.provider.send("hardhat_mine", ["0xB"]);
+  await network.provider.send("hardhat_mine", ["0xA"]);
   await ownerContract.trigger();
   expect(await ethers.provider.getBalance(fallback.address)).to.equal(
     fallBackInitBalance.add(100)
