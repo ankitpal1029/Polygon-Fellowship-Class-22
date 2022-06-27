@@ -9,6 +9,8 @@
     "@maticnetwork/maticjs-web3": "^1.0.1",
     "@openzeppelin/contracts": "^4.6.0",
     "@truffle/hdwallet-provider": "^2.0.9",
+    "@uniswap/sdk-core": "^3.0.1",
+    "@uniswap/v3-core": "^1.0.1",
     "hardhat": "^2.9.9"
   },
   "devDependencies": {
