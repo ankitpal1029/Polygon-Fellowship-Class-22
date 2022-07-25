@@ -13,11 +13,15 @@ contract NFTFactory is ERC721URIStorage, Ownable {
     /// @dev Base token URI used as a prefix by tokenURI().
     string public baseTokenURI;
 
-    constructor() ERC721("YAY NFTs", "YAY") {
+    constructor() ERC721("EW", "YAY") {
         baseTokenURI = "";
     }
 
-    function mintNFT(address recipient, string memory tokenURI) public onlyOwner returns (uint256) {
+    function mintNFT(address recipient, string memory tokenURI)
+        public
+        onlyOwner
+        returns (uint256)
+    {
         require(_tokenIds.current() < 3000, "ERC721: total supply reached");
         _tokenIds.increment();
 
